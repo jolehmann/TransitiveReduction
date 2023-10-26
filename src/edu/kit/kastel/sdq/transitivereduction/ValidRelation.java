@@ -5,18 +5,18 @@ import java.util.Set;
 public class ValidRelation<T> {
 
 	Set<T> fromCombinedLevel;
-	Set<Set<T>> toCombinedLevels;
+	Set<T> toCombinedLevel;
 	
-	public ValidRelation(Set<T> fromCombinedLevel, Set<Set<T>> toCombinedLevels) {
+	public ValidRelation(Set<T> fromCombinedLevel, Set<T> toCombinedLevel) {
 		this.fromCombinedLevel = fromCombinedLevel;
-		this.toCombinedLevels = toCombinedLevels;
+		this.toCombinedLevel = toCombinedLevel;
 	}
 	
 	public Set<T> getFrom() {
 		return this.fromCombinedLevel;
 	}
 	
-	public Set<Set<T>> getTo() {
-		return this.toCombinedLevels;
+	public Set<T> getTo() {
+		return this.toCombinedLevel;
 	}
 }

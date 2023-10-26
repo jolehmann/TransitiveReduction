@@ -45,6 +45,11 @@ public class CombinedLevel {
 		final CombinedLevel other = (CombinedLevel) obj;
 		return this.includedLevelsBinaryRepresentation.equals(other.includedLevelsBinaryRepresentation);
 	}
+	
+	@Override
+	public int hashCode() {
+		return this.includedLevelsBinaryRepresentation.hashCode();
+	}
 
 	public boolean isSubsetOf(CombinedLevel other) {
 		// 1101011000: this
